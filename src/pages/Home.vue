@@ -7,7 +7,7 @@
        <article class="filme" v-for="filme in filmes" :key="filme.id">
          <strong>{{filme.nome}}</strong>
          <img :src="filme.foto" alt="filme.nome">
-         <router-link to="`/filme/${filme.id}`">Acessar</router-link>
+         <router-link :to="`/filme/${filme.id}`">Acessar</router-link>
        </article>
      </div>
 
